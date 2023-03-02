@@ -10,7 +10,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/profiler/internal/immutable"
+	"github.com/lsgndln/dd-trace-go/profiler/internal/immutable"
 )
 
 func TestStringSlice(t *testing.T) {

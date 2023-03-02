@@ -20,8 +20,8 @@
 //			"github.com/99designs/gqlgen/_examples/todo"
 //			"github.com/99designs/gqlgen/graphql/handler"
 //
-//			"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/tracer"
-//			gqlgentrace "gopkg.in/DataDog/dd-trace-go.v1/contrib/99designs/gqlgen"
+//			"github.com/lsgndln/dd-trace-go/ddtrace/tracer"
+//			gqlgentrace "github.com/lsgndln/dd-trace-go/contrib/99designs/gqlgen"
 //		)
 //
 //		func Example() {
@@ -49,9 +49,9 @@ import (
 	"github.com/99designs/gqlgen/graphql"
 	"github.com/vektah/gqlparser/v2/ast"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/ext"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/tracer"
+	"github.com/lsgndln/dd-trace-go/ddtrace"
+	"github.com/lsgndln/dd-trace-go/ddtrace/ext"
+	"github.com/lsgndln/dd-trace-go/ddtrace/tracer"
 )
 
 const (

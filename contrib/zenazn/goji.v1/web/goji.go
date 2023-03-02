@@ -4,7 +4,7 @@
 // Copyright 2016 Datadog, Inc.
 
 // Package web provides functions to trace the zenazn/goji/web package (https://github.com/zenazn/goji).
-package web // import "gopkg.in/DataDog/dd-trace-go.v1/contrib/zenazn/goji.v1/web"
+package web // import "github.com/lsgndln/dd-trace-go/contrib/zenazn/goji.v1/web"
 
 import (
 	"fmt"
@@ -12,10 +12,10 @@ import (
 	"net/http"
 	"sync"
 
-	httptrace "gopkg.in/DataDog/dd-trace-go.v1/contrib/net/http"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/ext"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/tracer"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/log"
+	httptrace "github.com/lsgndln/dd-trace-go/contrib/net/http"
+	"github.com/lsgndln/dd-trace-go/ddtrace/ext"
+	"github.com/lsgndln/dd-trace-go/ddtrace/tracer"
+	"github.com/lsgndln/dd-trace-go/internal/log"
 
 	"github.com/zenazn/goji/web"
 )

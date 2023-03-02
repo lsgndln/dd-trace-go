@@ -11,7 +11,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/internal"
+	"github.com/lsgndln/dd-trace-go/ddtrace/internal"
 )
 
 func TestContextWithSpan(t *testing.T) {

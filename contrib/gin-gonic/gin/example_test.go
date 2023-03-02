@@ -6,8 +6,8 @@
 package gin_test
 
 import (
-	gintrace "gopkg.in/DataDog/dd-trace-go.v1/contrib/gin-gonic/gin"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/tracer"
+	gintrace "github.com/lsgndln/dd-trace-go/contrib/gin-gonic/gin"
+	"github.com/lsgndln/dd-trace-go/ddtrace/tracer"
 
 	"github.com/gin-gonic/gin"
 )

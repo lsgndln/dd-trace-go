@@ -13,9 +13,9 @@ import (
 	"strconv"
 	"testing"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/tracer"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/appsec"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/appsec/waf"
+	"github.com/lsgndln/dd-trace-go/ddtrace/tracer"
+	"github.com/lsgndln/dd-trace-go/internal/appsec"
+	"github.com/lsgndln/dd-trace-go/internal/appsec/waf"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

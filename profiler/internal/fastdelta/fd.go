@@ -67,8 +67,8 @@ import (
 
 	"github.com/spaolacci/murmur3"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/profiler/internal/pproflite"
-	"gopkg.in/DataDog/dd-trace-go.v1/profiler/internal/pprofutils"
+	"github.com/lsgndln/dd-trace-go/profiler/internal/pproflite"
+	"github.com/lsgndln/dd-trace-go/profiler/internal/pprofutils"
 )
 
 // DeltaComputer calculates the difference between pprof-encoded profiles

@@ -15,9 +15,9 @@ import (
 	esapi8 "github.com/elastic/go-elasticsearch/v8/esapi"
 	"github.com/stretchr/testify/assert"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/ext"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/mocktracer"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/globalconfig"
+	"github.com/lsgndln/dd-trace-go/ddtrace/ext"
+	"github.com/lsgndln/dd-trace-go/ddtrace/mocktracer"
+	"github.com/lsgndln/dd-trace-go/internal/globalconfig"
 )
 
 func checkGETTraceV8(assert *assert.Assertions, mt mocktracer.Tracer) {

@@ -12,8 +12,8 @@ import (
 	"os"
 	"time"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/hostname/cachedfetch"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/hostname/httputils"
+	"github.com/lsgndln/dd-trace-go/internal/hostname/cachedfetch"
+	"github.com/lsgndln/dd-trace-go/internal/hostname/httputils"
 )
 
 // declare these as vars not const to ease testing

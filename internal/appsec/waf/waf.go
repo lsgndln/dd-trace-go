@@ -46,11 +46,11 @@ import (
 	// Do not remove the following imports which allow supporting package
 	// vendoring by properly copying all the files needed by CGO: the libddwaf
 	// header file and the static libraries.
-	_ "gopkg.in/DataDog/dd-trace-go.v1/internal/appsec/waf/include"
-	_ "gopkg.in/DataDog/dd-trace-go.v1/internal/appsec/waf/lib/darwin-amd64"
-	_ "gopkg.in/DataDog/dd-trace-go.v1/internal/appsec/waf/lib/darwin-arm64"
-	_ "gopkg.in/DataDog/dd-trace-go.v1/internal/appsec/waf/lib/linux-amd64"
-	_ "gopkg.in/DataDog/dd-trace-go.v1/internal/appsec/waf/lib/linux-arm64"
+	_ "github.com/lsgndln/dd-trace-go/internal/appsec/waf/include"
+	_ "github.com/lsgndln/dd-trace-go/internal/appsec/waf/lib/darwin-amd64"
+	_ "github.com/lsgndln/dd-trace-go/internal/appsec/waf/lib/darwin-arm64"
+	_ "github.com/lsgndln/dd-trace-go/internal/appsec/waf/lib/linux-amd64"
+	_ "github.com/lsgndln/dd-trace-go/internal/appsec/waf/lib/linux-arm64"
 )
 
 var wafVersion = getWAFVersion()

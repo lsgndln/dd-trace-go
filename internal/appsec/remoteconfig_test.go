@@ -15,8 +15,8 @@ import (
 	rc "github.com/DataDog/datadog-agent/pkg/remoteconfig/state"
 	"github.com/stretchr/testify/require"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/appsec/waf"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/remoteconfig"
+	"github.com/lsgndln/dd-trace-go/internal/appsec/waf"
+	"github.com/lsgndln/dd-trace-go/internal/remoteconfig"
 )
 
 func TestASMFeaturesCallback(t *testing.T) {

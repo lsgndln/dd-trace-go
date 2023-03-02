@@ -9,8 +9,8 @@ import (
 	"os"
 	"regexp"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/internal"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/log"
+	"github.com/lsgndln/dd-trace-go/internal"
+	"github.com/lsgndln/dd-trace-go/internal/log"
 )
 
 // The env vars described below are used to configure the http security tags collection.

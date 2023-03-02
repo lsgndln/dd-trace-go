@@ -28,7 +28,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/profiler/internal/pprofutils"
+	"github.com/lsgndln/dd-trace-go/profiler/internal/pprofutils"
 )
 
 const heapFile = "heap.pprof"

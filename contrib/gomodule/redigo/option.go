@@ -3,12 +3,12 @@
 // This product includes software developed at Datadog (https://www.datadoghq.com/).
 // Copyright 2016 Datadog, Inc.
 
-package redigo // import "gopkg.in/DataDog/dd-trace-go.v1/contrib/gomodule/redigo"
+package redigo // import "github.com/lsgndln/dd-trace-go/contrib/gomodule/redigo"
 
 import (
 	"math"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/internal"
+	"github.com/lsgndln/dd-trace-go/internal"
 )
 
 type dialConfig struct {

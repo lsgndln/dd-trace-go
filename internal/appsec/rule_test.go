@@ -13,7 +13,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/appsec/waf"
+	"github.com/lsgndln/dd-trace-go/internal/appsec/waf"
 )
 
 func TestStaticRule(t *testing.T) {

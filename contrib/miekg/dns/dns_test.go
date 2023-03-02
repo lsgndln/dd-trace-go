@@ -15,9 +15,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	dnstrace "gopkg.in/DataDog/dd-trace-go.v1/contrib/miekg/dns"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/ext"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/mocktracer"
+	dnstrace "github.com/lsgndln/dd-trace-go/contrib/miekg/dns"
+	"github.com/lsgndln/dd-trace-go/ddtrace/ext"
+	"github.com/lsgndln/dd-trace-go/ddtrace/mocktracer"
 )
 
 type testHandler struct{}

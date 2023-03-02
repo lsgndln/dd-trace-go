@@ -8,7 +8,7 @@ package gorm
 import (
 	"math"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/internal"
+	"github.com/lsgndln/dd-trace-go/internal"
 
 	"gopkg.in/jinzhu/gorm.v1"
 )

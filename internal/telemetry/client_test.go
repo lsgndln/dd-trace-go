@@ -16,7 +16,7 @@ import (
 	"testing"
 	"time"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/telemetry"
+	"github.com/lsgndln/dd-trace-go/internal/telemetry"
 )
 
 func TestClient(t *testing.T) {

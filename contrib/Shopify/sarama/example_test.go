@@ -10,8 +10,8 @@ import (
 
 	"github.com/Shopify/sarama"
 
-	saramatrace "gopkg.in/DataDog/dd-trace-go.v1/contrib/Shopify/sarama"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/tracer"
+	saramatrace "github.com/lsgndln/dd-trace-go/contrib/Shopify/sarama"
+	"github.com/lsgndln/dd-trace-go/ddtrace/tracer"
 )
 
 func Example_asyncProducer() {

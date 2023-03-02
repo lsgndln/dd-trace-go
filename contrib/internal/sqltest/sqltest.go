@@ -3,7 +3,7 @@
 // This product includes software developed at Datadog (https://www.datadoghq.com/).
 // Copyright 2016 Datadog, Inc.
 
-package sqltest // import "gopkg.in/DataDog/dd-trace-go.v1/contrib/internal/sqltest"
+package sqltest // import "github.com/lsgndln/dd-trace-go/contrib/internal/sqltest"
 
 import (
 	"context"
@@ -12,9 +12,9 @@ import (
 	"log"
 	"testing"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/ext"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/mocktracer"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/tracer"
+	"github.com/lsgndln/dd-trace-go/ddtrace/ext"
+	"github.com/lsgndln/dd-trace-go/ddtrace/mocktracer"
+	"github.com/lsgndln/dd-trace-go/ddtrace/tracer"
 
 	"github.com/stretchr/testify/assert"
 )

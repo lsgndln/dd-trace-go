@@ -17,14 +17,14 @@ import (
 	"sync/atomic"
 	"time"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/ext"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/appsec/dyngo"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/appsec/dyngo/instrumentation/grpcsec"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/appsec/dyngo/instrumentation/httpsec"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/appsec/dyngo/instrumentation/sharedsec"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/appsec/waf"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/log"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/samplernames"
+	"github.com/lsgndln/dd-trace-go/ddtrace/ext"
+	"github.com/lsgndln/dd-trace-go/internal/appsec/dyngo"
+	"github.com/lsgndln/dd-trace-go/internal/appsec/dyngo/instrumentation/grpcsec"
+	"github.com/lsgndln/dd-trace-go/internal/appsec/dyngo/instrumentation/httpsec"
+	"github.com/lsgndln/dd-trace-go/internal/appsec/dyngo/instrumentation/sharedsec"
+	"github.com/lsgndln/dd-trace-go/internal/appsec/waf"
+	"github.com/lsgndln/dd-trace-go/internal/log"
+	"github.com/lsgndln/dd-trace-go/internal/samplernames"
 )
 
 const (
