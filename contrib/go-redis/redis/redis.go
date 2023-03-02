@@ -16,12 +16,12 @@ import (
 	"strconv"
 	"strings"
 
+	"github.com/redis/go-redis"
+
 	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace"
 	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/ext"
 	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/tracer"
 	"gopkg.in/DataDog/dd-trace-go.v1/internal/log"
-
-	"github.com/go-redis/redis"
 )
 
 // Client is used to trace requests to a redis server.
@@ -135,7 +135,7 @@ func (c *Pipeliner) execWithContext(ctx context.Context) ([]redis.Cmder, error) 
 	span.SetTag(ext.ResourceName, commandsToString(cmds))
 	span.SetTag("redis.pipeline_length", strconv.Itoa(len(cmds)))
 	var finishOpts []ddtrace.FinishOption
-	if err != redis.Nil {
+	if err != redis.Nil && c.config.errCheck(err) {
 		finishOpts = append(finishOpts, tracer.WithError(err))
 	}
 	span.Finish(finishOpts...)
@@ -206,7 +206,7 @@ func createWrapperFromClient(tc *Client) func(oldProcess func(cmd redis.Cmder) e
 			span, _ := tracer.StartSpanFromContext(ctx, "redis.command", opts...)
 			err := tc.process(cmd)
 			var finishOpts []ddtrace.FinishOption
-			if err != redis.Nil {
+			if err != redis.Nil && p.config.errCheck(err) {
 				finishOpts = append(finishOpts, tracer.WithError(err))
 			}
 			span.Finish(finishOpts...)
