@@ -221,4 +221,4 @@ require (
 	sigs.k8s.io/yaml v1.1.0 // indirect
 )
 
-require github.com/rueian/rueidis v0.0.97 // indirect
+require github.com/lsgndln/rueidis v1.1.0 // indirect

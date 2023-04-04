@@ -14,8 +14,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/rueian/rueidis"
-	"github.com/rueian/rueidis/rueidishook"
+	"github.com/lsgndln/rueidis"
+	"github.com/lsgndln/rueidis/rueidishook"
 
 	"github.com/lsgndln/dd-trace-go/ddtrace"
 	"github.com/lsgndln/dd-trace-go/ddtrace/ext"
