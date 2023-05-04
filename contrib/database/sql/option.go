@@ -10,9 +10,9 @@ import (
 	"math"
 	"os"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/tracer"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/namingschema"
+	"github.com/lsgndln/dd-trace-go/ddtrace/tracer"
+	"github.com/lsgndln/dd-trace-go/internal"
+	"github.com/lsgndln/dd-trace-go/internal/namingschema"
 )
 
 type config struct {

@@ -6,8 +6,8 @@
 package grpc
 
 import (
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/ext"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/tracer"
+	"github.com/lsgndln/dd-trace-go/ddtrace/ext"
+	"github.com/lsgndln/dd-trace-go/ddtrace/tracer"
 
 	context "golang.org/x/net/context"
 	"google.golang.org/grpc/stats"

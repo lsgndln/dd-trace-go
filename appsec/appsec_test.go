@@ -11,10 +11,10 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/appsec"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/mocktracer"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/tracer"
-	privateAppsec "gopkg.in/DataDog/dd-trace-go.v1/internal/appsec"
+	"github.com/lsgndln/dd-trace-go/appsec"
+	"github.com/lsgndln/dd-trace-go/ddtrace/mocktracer"
+	"github.com/lsgndln/dd-trace-go/ddtrace/tracer"
+	privateAppsec "github.com/lsgndln/dd-trace-go/internal/appsec"
 )
 
 func TestTrackUserLoginSuccessEvent(t *testing.T) {

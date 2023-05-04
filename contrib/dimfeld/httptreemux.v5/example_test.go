@@ -10,9 +10,9 @@ import (
 	"log"
 	"net/http"
 
-	httptrace "gopkg.in/DataDog/dd-trace-go.v1/contrib/dimfeld/httptreemux.v5"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/ext"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/tracer"
+	httptrace "github.com/lsgndln/dd-trace-go/contrib/dimfeld/httptreemux.v5"
+	"github.com/lsgndln/dd-trace-go/ddtrace/ext"
+	"github.com/lsgndln/dd-trace-go/ddtrace/tracer"
 )
 
 func Index(w http.ResponseWriter, _ *http.Request, _ map[string]string) {

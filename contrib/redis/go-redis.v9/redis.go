@@ -14,10 +14,10 @@ import (
 	"strconv"
 	"strings"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/ext"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/tracer"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/telemetry"
+	"github.com/lsgndln/dd-trace-go/ddtrace"
+	"github.com/lsgndln/dd-trace-go/ddtrace/ext"
+	"github.com/lsgndln/dd-trace-go/ddtrace/tracer"
+	"github.com/lsgndln/dd-trace-go/internal/telemetry"
 
 	"github.com/redis/go-redis/v9"
 )
@@ -154,7 +154,7 @@ func (ddh *datadogHook) ProcessHook(hook redis.ProcessHook) redis.ProcessHook {
 		err := hook(ctx, cmd)
 
 		var finishOpts []ddtrace.FinishOption
-		if err != nil && err != redis.Nil {
+		if err != nil && err != redis.Nil && ddh.config.errCheck(err) {
 			finishOpts = append(finishOpts, tracer.WithError(err))
 		}
 		span.Finish(finishOpts...)
@@ -184,7 +184,7 @@ func (ddh *datadogHook) ProcessPipelineHook(hook redis.ProcessPipelineHook) redi
 		err := hook(ctx, cmds)
 
 		var finishOpts []ddtrace.FinishOption
-		if err != nil && err != redis.Nil {
+		if err != nil && err != redis.Nil && ddh.config.errCheck(err) {
 			finishOpts = append(finishOpts, tracer.WithError(err))
 		}
 		span.Finish(finishOpts...)

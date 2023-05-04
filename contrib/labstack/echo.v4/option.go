@@ -8,8 +8,8 @@ package echo
 import (
 	"math"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/globalconfig"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/namingschema"
+	"github.com/lsgndln/dd-trace-go/internal/globalconfig"
+	"github.com/lsgndln/dd-trace-go/internal/namingschema"
 
 	"github.com/labstack/echo/v4"
 )

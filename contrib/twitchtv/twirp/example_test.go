@@ -10,8 +10,8 @@ import (
 	"fmt"
 	"net/http"
 
-	twirptrace "gopkg.in/DataDog/dd-trace-go.v1/contrib/twitchtv/twirp"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/tracer"
+	twirptrace "github.com/lsgndln/dd-trace-go/contrib/twitchtv/twirp"
+	"github.com/lsgndln/dd-trace-go/ddtrace/tracer"
 
 	"github.com/twitchtv/twirp/example"
 )

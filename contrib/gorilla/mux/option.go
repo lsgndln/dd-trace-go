@@ -9,12 +9,12 @@ import (
 	"math"
 	"net/http"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/ext"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/tracer"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/globalconfig"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/namingschema"
+	"github.com/lsgndln/dd-trace-go/ddtrace"
+	"github.com/lsgndln/dd-trace-go/ddtrace/ext"
+	"github.com/lsgndln/dd-trace-go/ddtrace/tracer"
+	"github.com/lsgndln/dd-trace-go/internal"
+	"github.com/lsgndln/dd-trace-go/internal/globalconfig"
+	"github.com/lsgndln/dd-trace-go/internal/namingschema"
 )
 
 const defaultServiceName = "mux.router"

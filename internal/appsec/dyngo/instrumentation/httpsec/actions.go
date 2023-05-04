@@ -10,7 +10,7 @@ import (
 	"strings"
 	"sync"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/log"
+	"github.com/lsgndln/dd-trace-go/internal/log"
 )
 
 // Action is used to identify any action kind

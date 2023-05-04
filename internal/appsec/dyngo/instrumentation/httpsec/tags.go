@@ -11,8 +11,8 @@ import (
 	"sort"
 	"strings"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/appsec/dyngo/instrumentation"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/log"
+	"github.com/lsgndln/dd-trace-go/internal/appsec/dyngo/instrumentation"
+	"github.com/lsgndln/dd-trace-go/internal/log"
 
 	"github.com/DataDog/appsec-internal-go/httpsec"
 	"github.com/DataDog/appsec-internal-go/netip"

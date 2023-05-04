@@ -11,7 +11,7 @@ package appsec
 import (
 	"testing"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/appsec/dyngo/instrumentation"
+	"github.com/lsgndln/dd-trace-go/internal/appsec/dyngo/instrumentation"
 
 	waf "github.com/DataDog/go-libddwaf"
 	"github.com/stretchr/testify/require"

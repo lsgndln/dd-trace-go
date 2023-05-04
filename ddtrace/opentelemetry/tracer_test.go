@@ -17,12 +17,12 @@ import (
 	"go.opentelemetry.io/otel/attribute"
 	oteltrace "go.opentelemetry.io/otel/trace"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/internal"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/tracer"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/log"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/telemetry"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/telemetry/telemetrytest"
+	"github.com/lsgndln/dd-trace-go/ddtrace"
+	"github.com/lsgndln/dd-trace-go/ddtrace/internal"
+	"github.com/lsgndln/dd-trace-go/ddtrace/tracer"
+	"github.com/lsgndln/dd-trace-go/internal/log"
+	"github.com/lsgndln/dd-trace-go/internal/telemetry"
+	"github.com/lsgndln/dd-trace-go/internal/telemetry/telemetrytest"
 )
 
 func TestGetTracer(t *testing.T) {

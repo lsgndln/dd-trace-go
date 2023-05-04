@@ -15,9 +15,9 @@ import (
 	"testing"
 	"time"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/ext"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/log"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/samplernames"
+	"github.com/lsgndln/dd-trace-go/ddtrace/ext"
+	"github.com/lsgndln/dd-trace-go/internal/log"
+	"github.com/lsgndln/dd-trace-go/internal/samplernames"
 
 	"github.com/DataDog/datadog-agent/pkg/obfuscate"
 	"github.com/stretchr/testify/assert"

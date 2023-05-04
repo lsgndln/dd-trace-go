@@ -10,9 +10,9 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/tracer"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/telemetry"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/telemetry/telemetrytest"
+	"github.com/lsgndln/dd-trace-go/ddtrace/tracer"
+	"github.com/lsgndln/dd-trace-go/internal/telemetry"
+	"github.com/lsgndln/dd-trace-go/internal/telemetry/telemetrytest"
 )
 
 // Test that the profiler sends the correct telemetry information

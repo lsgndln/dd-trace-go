@@ -4,7 +4,7 @@
 // Copyright 2016 Datadog, Inc.
 
 // Package api provides functions to trace the google.golang.org/api package.
-package api // import "gopkg.in/DataDog/dd-trace-go.v1/contrib/google.golang.org/api"
+package api // import "github.com/lsgndln/dd-trace-go/contrib/google.golang.org/api"
 
 //go:generate go run make_endpoints.go
 
@@ -12,12 +12,12 @@ import (
 	"math"
 	"net/http"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/contrib/google.golang.org/api/internal"
-	httptrace "gopkg.in/DataDog/dd-trace-go.v1/contrib/net/http"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/ext"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/log"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/telemetry"
+	"github.com/lsgndln/dd-trace-go/contrib/google.golang.org/api/internal"
+	httptrace "github.com/lsgndln/dd-trace-go/contrib/net/http"
+	"github.com/lsgndln/dd-trace-go/ddtrace"
+	"github.com/lsgndln/dd-trace-go/ddtrace/ext"
+	"github.com/lsgndln/dd-trace-go/internal/log"
+	"github.com/lsgndln/dd-trace-go/internal/telemetry"
 
 	"golang.org/x/oauth2/google"
 )

@@ -23,10 +23,10 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/tracer"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/httpmem"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/log"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/traceprof"
+	"github.com/lsgndln/dd-trace-go/ddtrace/tracer"
+	"github.com/lsgndln/dd-trace-go/internal/httpmem"
+	"github.com/lsgndln/dd-trace-go/internal/log"
+	"github.com/lsgndln/dd-trace-go/internal/traceprof"
 )
 
 func TestMain(m *testing.M) {

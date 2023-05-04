@@ -11,9 +11,9 @@ package appsec
 import (
 	"sync"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/appsec/dyngo"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/log"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/remoteconfig"
+	"github.com/lsgndln/dd-trace-go/internal/appsec/dyngo"
+	"github.com/lsgndln/dd-trace-go/internal/log"
+	"github.com/lsgndln/dd-trace-go/internal/remoteconfig"
 
 	waf "github.com/DataDog/go-libddwaf"
 )

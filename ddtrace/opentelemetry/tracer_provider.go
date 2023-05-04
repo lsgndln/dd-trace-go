@@ -33,9 +33,9 @@ import (
 
 	oteltrace "go.opentelemetry.io/otel/trace"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/internal"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/tracer"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/log"
+	"github.com/lsgndln/dd-trace-go/ddtrace/internal"
+	"github.com/lsgndln/dd-trace-go/ddtrace/tracer"
+	"github.com/lsgndln/dd-trace-go/internal/log"
 )
 
 var _ oteltrace.TracerProvider = (*TracerProvider)(nil)

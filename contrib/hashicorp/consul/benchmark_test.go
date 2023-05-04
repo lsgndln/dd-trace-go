@@ -8,7 +8,7 @@ package consul
 import (
 	"testing"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/tracer"
+	"github.com/lsgndln/dd-trace-go/ddtrace/tracer"
 
 	consul "github.com/hashicorp/consul/api"
 )

@@ -9,10 +9,10 @@ import (
 	"context"
 	"log"
 
-	sqltrace "gopkg.in/DataDog/dd-trace-go.v1/contrib/database/sql"
-	gormtrace "gopkg.in/DataDog/dd-trace-go.v1/contrib/gorm.io/gorm.v1"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/ext"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/tracer"
+	sqltrace "github.com/lsgndln/dd-trace-go/contrib/database/sql"
+	gormtrace "github.com/lsgndln/dd-trace-go/contrib/gorm.io/gorm.v1"
+	"github.com/lsgndln/dd-trace-go/ddtrace/ext"
+	"github.com/lsgndln/dd-trace-go/ddtrace/tracer"
 
 	"github.com/jackc/pgx/v5/stdlib"
 	"gorm.io/driver/postgres"

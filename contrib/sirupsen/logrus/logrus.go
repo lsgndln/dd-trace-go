@@ -7,8 +7,8 @@
 package logrus
 
 import (
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/tracer"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/telemetry"
+	"github.com/lsgndln/dd-trace-go/ddtrace/tracer"
+	"github.com/lsgndln/dd-trace-go/internal/telemetry"
 
 	"github.com/sirupsen/logrus"
 )

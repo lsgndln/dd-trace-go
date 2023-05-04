@@ -3,13 +3,13 @@
 // This product includes software developed at Datadog (https://www.datadoghq.com/).
 // Copyright 2016 Datadog, Inc.
 
-package redigo // import "gopkg.in/DataDog/dd-trace-go.v1/contrib/garyburd/redigo"
+package redigo // import "github.com/lsgndln/dd-trace-go/contrib/garyburd/redigo"
 
 import (
 	"math"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/internal"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/namingschema"
+	"github.com/lsgndln/dd-trace-go/internal"
+	"github.com/lsgndln/dd-trace-go/internal/namingschema"
 )
 
 const defaultServiceName = "redis.conn"

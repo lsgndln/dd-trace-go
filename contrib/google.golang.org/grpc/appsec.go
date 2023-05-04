@@ -8,10 +8,10 @@ package grpc
 import (
 	"encoding/json"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/appsec/dyngo/instrumentation"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/appsec/dyngo/instrumentation/grpcsec"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/appsec/dyngo/instrumentation/httpsec"
+	"github.com/lsgndln/dd-trace-go/ddtrace"
+	"github.com/lsgndln/dd-trace-go/internal/appsec/dyngo/instrumentation"
+	"github.com/lsgndln/dd-trace-go/internal/appsec/dyngo/instrumentation/grpcsec"
+	"github.com/lsgndln/dd-trace-go/internal/appsec/dyngo/instrumentation/httpsec"
 
 	"github.com/DataDog/appsec-internal-go/netip"
 	"golang.org/x/net/context"

@@ -10,7 +10,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/namingschema"
+	"github.com/lsgndln/dd-trace-go/internal/namingschema"
 )
 
 func TestOpContribSchemas(t *testing.T) {

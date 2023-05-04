@@ -12,8 +12,8 @@ import (
 	elasticsearch "github.com/elastic/go-elasticsearch/v8"
 	"github.com/elastic/go-elasticsearch/v8/esapi"
 
-	elastictrace "gopkg.in/DataDog/dd-trace-go.v1/contrib/elastic/go-elasticsearch.v6"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/tracer"
+	elastictrace "github.com/lsgndln/dd-trace-go/contrib/elastic/go-elasticsearch.v6"
+	"github.com/lsgndln/dd-trace-go/ddtrace/tracer"
 )
 
 func Example_v8() {

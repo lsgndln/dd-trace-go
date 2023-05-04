@@ -9,11 +9,11 @@
 //
 // For more information on registering and why this needs to happen, please check the
 // github.com/DataDog/dd-trace-go/contrib/database/sql package.
-package sqlx // import "gopkg.in/DataDog/dd-trace-go.v1/contrib/jmoiron/sqlx"
+package sqlx // import "github.com/lsgndln/dd-trace-go/contrib/jmoiron/sqlx"
 
 import (
-	sqltraced "gopkg.in/DataDog/dd-trace-go.v1/contrib/database/sql"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/telemetry"
+	sqltraced "github.com/lsgndln/dd-trace-go/contrib/database/sql"
+	"github.com/lsgndln/dd-trace-go/internal/telemetry"
 
 	"github.com/jmoiron/sqlx"
 )

@@ -12,7 +12,7 @@ import (
 	"context"
 	"sync"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/log"
+	"github.com/lsgndln/dd-trace-go/internal/log"
 )
 
 // Fetcher supports fetching a value, such as from a cloud service API.  An

@@ -20,12 +20,12 @@ import (
 	"sync"
 	"time"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/internal"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/appsec"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/globalconfig"
-	logger "gopkg.in/DataDog/dd-trace-go.v1/internal/log"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/osinfo"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/version"
+	"github.com/lsgndln/dd-trace-go/internal"
+	"github.com/lsgndln/dd-trace-go/internal/appsec"
+	"github.com/lsgndln/dd-trace-go/internal/globalconfig"
+	logger "github.com/lsgndln/dd-trace-go/internal/log"
+	"github.com/lsgndln/dd-trace-go/internal/osinfo"
+	"github.com/lsgndln/dd-trace-go/internal/version"
 )
 
 // Client buffers and sends telemetry messages to Datadog (possibly through an

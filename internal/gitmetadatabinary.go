@@ -11,7 +11,7 @@ package internal
 import (
 	"runtime/debug"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/log"
+	"github.com/lsgndln/dd-trace-go/internal/log"
 )
 
 // getTagsFromBinary extracts git metadata from binary metadata

@@ -13,8 +13,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/contrib/gorilla/mux"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/telemetry"
+	"github.com/lsgndln/dd-trace-go/contrib/gorilla/mux"
+	"github.com/lsgndln/dd-trace-go/internal/telemetry"
 )
 
 // TestIntegrationInfo verifies that an integration leveraging instrumentation telemetry
@@ -37,7 +37,7 @@ type contribPkg struct {
 	Dir        string
 }
 
-var TelemetryImport = "gopkg.in/DataDog/dd-trace-go.v1/internal/telemetry"
+var TelemetryImport = "github.com/lsgndln/dd-trace-go/internal/telemetry"
 
 func (p *contribPkg) hasTelemetryImport() bool {
 	for _, imp := range p.Imports {

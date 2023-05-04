@@ -21,7 +21,7 @@ import (
 	waf "github.com/DataDog/go-libddwaf"
 	"github.com/stretchr/testify/require"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/remoteconfig"
+	"github.com/lsgndln/dd-trace-go/internal/remoteconfig"
 )
 
 func TestASMFeaturesCallback(t *testing.T) {

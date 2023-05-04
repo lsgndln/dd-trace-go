@@ -20,10 +20,10 @@ import (
 	"fmt"
 	"net/http"
 
-	httptrace "gopkg.in/DataDog/dd-trace-go.v1/contrib/net/http"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/ext"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/telemetry"
+	httptrace "github.com/lsgndln/dd-trace-go/contrib/net/http"
+	"github.com/lsgndln/dd-trace-go/ddtrace"
+	"github.com/lsgndln/dd-trace-go/ddtrace/ext"
+	"github.com/lsgndln/dd-trace-go/internal/telemetry"
 
 	"github.com/hashicorp/vault/api"
 	"github.com/hashicorp/vault/sdk/helper/consts"

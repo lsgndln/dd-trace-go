@@ -9,7 +9,7 @@ import (
 	"net/url"
 	"os"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/log"
+	"github.com/lsgndln/dd-trace-go/internal/log"
 )
 
 // AgentURLFromEnv determines the trace agent URL from environment variable

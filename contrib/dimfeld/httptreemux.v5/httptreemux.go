@@ -4,17 +4,17 @@
 // Copyright 2016 Datadog, Inc.
 
 // Package httptreemux provides functions to trace the dimfeld/httptreemux/v5 package (https://github.com/dimfeld/httptreemux).
-package httptreemux // import "gopkg.in/DataDog/dd-trace-go.v1/contrib/dimfeld/httptreemux.v5"
+package httptreemux // import "github.com/lsgndln/dd-trace-go/contrib/dimfeld/httptreemux.v5"
 
 import (
 	"net/http"
 	"strings"
 
-	httptrace "gopkg.in/DataDog/dd-trace-go.v1/contrib/net/http"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/ext"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/tracer"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/log"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/telemetry"
+	httptrace "github.com/lsgndln/dd-trace-go/contrib/net/http"
+	"github.com/lsgndln/dd-trace-go/ddtrace/ext"
+	"github.com/lsgndln/dd-trace-go/ddtrace/tracer"
+	"github.com/lsgndln/dd-trace-go/internal/log"
+	"github.com/lsgndln/dd-trace-go/internal/telemetry"
 
 	"github.com/dimfeld/httptreemux/v5"
 )

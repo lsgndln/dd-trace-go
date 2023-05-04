@@ -17,9 +17,9 @@ import (
 	"os/signal"
 	"time"
 
-	httptrace "gopkg.in/DataDog/dd-trace-go.v1/contrib/net/http"
-	"gopkg.in/DataDog/dd-trace-go.v1/ddtrace/tracer"
-	"gopkg.in/DataDog/dd-trace-go.v1/profiler"
+	httptrace "github.com/lsgndln/dd-trace-go/contrib/net/http"
+	"github.com/lsgndln/dd-trace-go/ddtrace/tracer"
+	"github.com/lsgndln/dd-trace-go/profiler"
 )
 
 var dummyData struct {

@@ -10,8 +10,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/globalconfig"
-	"gopkg.in/DataDog/dd-trace-go.v1/internal/namingschema"
+	"github.com/lsgndln/dd-trace-go/internal/globalconfig"
+	"github.com/lsgndln/dd-trace-go/internal/namingschema"
 )
 
 func TestNewServiceNameSchema(t *testing.T) {
